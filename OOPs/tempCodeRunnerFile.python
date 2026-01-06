@@ -1,0 +1,11 @@
+class Order:
+   def __init__ (self,items,price):
+      self.items=items
+      self.price=price
+
+   def __gt__ (self,ord2):
+      return self.price > ord2.price
+
+ord1=Order("Laptop",50000)
+ord2=Order("Mobile",10000)
+print(ord1>ord2)
