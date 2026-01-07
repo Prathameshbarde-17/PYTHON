@@ -72,8 +72,3 @@ print(cube(3))
 # Write a function that takes variable number of argument and return their sum.
 
 """
-
-def sum(*args):
-    return sum(args)
-
-print(sum(1,2,3,4,5))
