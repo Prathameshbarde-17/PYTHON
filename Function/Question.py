@@ -70,5 +70,51 @@ print(cube(3))
 """
 # 7_Question
 # Write a function that takes variable number of argument and return their sum.
+def sum(*args):
+    print(args)
+    for i in args:
+        print(i * 2)
+    return sum(args)
+print(sum(1,2,3,4,5))
 
 """
+
+"""
+# 8_Question
+# Create a function that accept any number of keyword argument and prints them in the format.
+# Key: value
+"""
+
+def print_kwargs(**kwargs):
+    for key,value in kwargs.items():
+        print(key,":",value)
+
+print_kwargs(name="Patty",age=20)
+print_kwargs(name="Patty",age=20,city="Pune")
+
+"""
+# 9_Question
+# Write a generator function  that yield even numbers up to specified limit
+
+"""
+
+def even_Generator(limit):
+    for i in range(2,limit,2):
+        yield i
+
+for i in even_Generator(10):
+    print("Even Numbers:",i)
+
+"""
+# 10_Question
+# create a recursive function to calculate the factorial of a number.
+"""
+
+def factorial(n):
+    if n ==1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print("Factorial : ",factorial(5))
+
