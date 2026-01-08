@@ -1,3 +1,6 @@
+
+# 1 TO 10 Questions on FUNCTION BASIC
+
 """
 # 1_Question
 # Write a function that returns the square of a number
